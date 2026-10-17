@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.5.0</title>
-      <pubDate>Sat, 17 Oct 2026 15:33:01 +0000</pubDate>
-      <sparkle:version>0.5.0</sparkle:version>
-      <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+      <title>Combiner 0.6.0</title>
+      <pubDate>Sat, 17 Oct 2026 15:53:21 +0000</pubDate>
+      <sparkle:version>0.6.0</sparkle:version>
+      <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Each project has its own Stems folder and strips (stable project ids)</li><li>Transfers resume, stall out and back off (Mac + web)</li><li>ORIGINAL where the sound first plays; Fader + pan setting; 24-bit renders</li><li>Write down snapshot ordering and old project versions</li><li>⚙︎ When a track is deleted from its project (hide, grey out, stop sharing)</li><li>Share every synth's patch (Surge, Vital, any AU synth), not just Serum's</li><li>Slices of a chopped take (take + slice points, Mac and web)</li><li>Rooms and songs (each song remembers its room)</li><li>A download page and Sparkle updates for friends</li><li>Release.sh is executable</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.5.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="7gKvTxkXAjrjYuQ3Vjuo3XfNG4wvRCiSvzIsIVFT5U8/6FIjQQ4oJzLH3jB3g6JDkU8OJHjc7mrJcF/T4wKzDA==" length="10878563"/>
+      <description><![CDATA[<ul><li>Impact watch, and log lines with a level and an area</li><li>Take folders share each take, and the dry print is the comp</li><li>Disk reserve setting and warnings, one copy per identity, old-render cap, Advanced and Unusual setups</li><li>Report a problem, and crash reports offered after a crash</li><li>Ableton Live background renders (second Live, groups as stems)</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.6.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="h9t/00Ogd9fn66MPYabBPIR8XwH13nLq6ji4k/jC7trPfVp3OanG0iwfdbhgztfNN187t45pjxZ6lDNEprF/Dg==" length="11222676"/>
     </item>
   </channel>
 </rss>
