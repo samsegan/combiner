@@ -44,5 +44,5 @@ rm -rf "$APP_DIR/Combiner.app"
 ditto "$MOUNT/Combiner.app" "$APP_DIR/Combiner.app"
 
 VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP_DIR/Combiner.app/Contents/Info.plist")"
-echo "Installed Combiner $VERSION in $APP_DIR. Opening it: look for its icon in the menu bar."
+echo "Installed Combiner $VERSION in $APP_DIR. Opening it: look for its icon in the Dock and the menu bar."
 open "$APP_DIR/Combiner.app"

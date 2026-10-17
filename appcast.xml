@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.8.0</title>
-      <pubDate>Sat, 17 Oct 2026 18:17:12 +0000</pubDate>
-      <sparkle:version>0.8.0</sparkle:version>
-      <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
+      <title>Combiner 0.9.0</title>
+      <pubDate>Sat, 17 Oct 2026 23:54:06 +0000</pubDate>
+      <sparkle:version>0.9.0</sparkle:version>
+      <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Playback volume, and click a waveform to play from there</li><li>The panel fits the screen and can be shortened again</li><li>Make eachSynthHasACombinerFolder pass on a Mac with Omnisphere installed</li><li>Two tests that failed the 0.8.0 release build on a busy runner</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.8.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="yxvOhk9xl//OpFlGM4BkTDCspDitxIFmhOFu7b1Vun5rL66jq+3GMmyWhSJ4IGRuZn55knaOtYjwEyeNV+nrCA==" length="11391900"/>
+      <description><![CDATA[<ul><li>Weigh a project by its render, not the DAW's leftovers</li><li>Prints from the project start or the first sound, tails capped, Dock + ⌘-Tab</li><li>Live MIDI on every save (Session View too); Logic's MIDI pass first</li><li>A Live in another home never holds renders up</li><li>The render Logic always reads the arrangement</li><li>A kept render Logic holding other projects doesn't weigh</li><li>Full mix each render, and passes shared as they finish</li><li>Window buttons, a glow on new files, folders for drops</li><li>Simple Mode, a plain room to drag files in and out of</li><li>What the transfer speed actually is, measured</li><li>Pack audio for the wire, losslessly</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.9.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="gSIpmZC+6PfdIox6kA4tYuz48yUJ3mOSy2MutgC2wKbsnqFNcGWSEt66oEjiUkQz0tLk+m/CSgyTQwq3a6xJAQ==" length="11853139"/>
     </item>
   </channel>
 </rss>
