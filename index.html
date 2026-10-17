@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combiner for Mac</title>
+  <meta name="description" content="See and drag each other's bounces, stems, MIDI and Serum patches, in the same room or across the internet.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23171817'/%3E%3Crect x='7' y='6' width='4' height='20' fill='%23efa942'/%3E%3Cpath d='M15 16h12M15 11h8M15 21h10' stroke='%23e9e7d4' stroke-width='3'/%3E%3C/svg%3E">
+  <style>
+    /* The Warehouse skin, as in the app and the web app. */
+    :root {
+      --bg: #171817; --plate-top: #31332c; --plate-bottom: #1b1d19; --field: #0a0d0b;
+      --text: #e9e7d4; --text2: #c0c1ad; --muted: #999e88; --hairline: #3d4038;
+      --accent: #efa942; --accent-top: #f9be62; --accent-bottom: #ce8426; --on-accent: #19150c;
+      --bevel-light: rgba(129, 133, 113, 0.55); --bevel-dark: #050706;
+      --label: "DIN Condensed", "DIN Alternate", "Bahnschrift SemiCondensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+      --body: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body { background: var(--bg); color: var(--text); font: 16px/1.5 var(--body); -webkit-font-smoothing: antialiased; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1, h2, .btn, .label { font-family: var(--label); font-weight: 700; letter-spacing: 0.035em; text-transform: uppercase; }
+    h1 { font-size: 48px; line-height: 1; margin: 0; display: flex; align-items: center; gap: 14px; }
+    h1 svg { width: 44px; height: 44px; flex: none; }
+    h2 { font-size: 20px; margin: 0 0 12px; color: var(--text); }
+    p { margin: 0 0 12px; color: var(--text2); }
+    .lede { font-size: 19px; color: var(--text); margin: 18px 0 28px; }
+    .plate {
+      background: linear-gradient(var(--plate-top), var(--plate-bottom));
+      border: 1px solid var(--bevel-dark);
+      box-shadow: inset 1px 1px 0 var(--bevel-light), inset -1px -1px 0 rgba(5, 7, 6, 0.6);
+      padding: 20px; margin: 0 0 16px;
+    }
+    .btn {
+      display: inline-block; font-size: 22px; padding: 14px 28px 12px; text-decoration: none;
+      color: var(--on-accent); background: linear-gradient(var(--accent-top), var(--accent-bottom));
+      border: 1px solid var(--bevel-dark); box-shadow: inset 1px 1px 0 rgba(255, 236, 200, 0.6);
+    }
+    .btn:hover { filter: brightness(1.06); }
+    .meta { font: 13px/1.4 var(--mono); color: var(--muted); margin-top: 12px; letter-spacing: 0.02em; }
+    ol { margin: 0; padding-left: 22px; color: var(--text2); }
+    li { margin: 0 0 8px; }
+    b { color: var(--text); font-weight: 600; }
+    .cmd { display: flex; gap: 8px; align-items: stretch; margin: 4px 0 8px; }
+    .cmd code {
+      flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; padding: 10px 12px;
+      background: var(--field); border: 1px solid var(--hairline); font: 13px/1.4 var(--mono); color: var(--text);
+    }
+    .cmd button {
+      font: 700 15px/1 var(--label); letter-spacing: 0.035em; text-transform: uppercase; color: var(--text);
+      background: linear-gradient(#4d5047, #1f221e); border: 1px solid var(--bevel-dark); padding: 0 14px; cursor: pointer;
+    }
+    a { color: var(--accent); }
+    .small { font-size: 14px; color: var(--muted); }
+    footer { margin-top: 32px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#2d2f2b"/><rect x="7" y="6" width="4" height="20" fill="#efa942"/><path d="M15 16h12M15 11h8M15 21h10" stroke="#e9e7d4" stroke-width="3"/></svg>
+    Combiner
+  </h1>
+  <p class="lede">Everyone in a session sees and drags each other's bounces, stems, MIDI and Serum patches, whether you're in the same room or in different cities. Type the same room code, and it lives in your menu bar.</p>
+
+  <section class="plate">
+    <a class="btn" href="https://github.com/samsegan/combiner/releases/latest/download/Combiner.dmg">Download for Mac</a>
+    <div class="meta" id="version">macOS 14 or later · Apple silicon (M1 or newer)</div>
+  </section>
+
+  <section class="plate">
+    <h2>The first time you open it</h2>
+    <p>Combiner is an early build that Apple hasn't checked yet, so macOS asks you to approve it once. After that it opens normally, and updates install without asking again.</p>
+    <ol>
+      <li>Open <b>Combiner.dmg</b> and drag <b>Combiner</b> into <b>Applications</b>.</li>
+      <li>Open Combiner from Applications. macOS says it can't verify it: click <b>Done</b>.</li>
+      <li>Open <b>System Settings › Privacy &amp; Security</b>, scroll to the bottom, click <b>Open Anyway</b> next to “Combiner was blocked”, and confirm with your password.</li>
+    </ol>
+    <p class="small">On macOS 14 Sonoma you can instead right-click Combiner in Applications, choose Open, then Open again.</p>
+  </section>
+
+  <section class="plate">
+    <h2>Or install from Terminal</h2>
+    <p>One line that downloads Combiner into Applications and opens it, with no warning to approve:</p>
+    <div class="cmd">
+      <code id="cmd">curl -fsSL https://samsegan.github.io/combiner/install.sh | bash</code>
+      <button type="button" id="copy">Copy</button>
+    </div>
+  </section>
+
+  <section class="plate">
+    <h2>What it asks for</h2>
+    <ol>
+      <li><b>Local Network</b>: to find the people in your room who are nearby.</li>
+      <li><b>Folders</b> (Music, Documents, Desktop): to see the projects and bounces you share.</li>
+      <li><b>Accessibility</b>, only for background renders in Logic Pro.</li>
+    </ol>
+  </section>
+
+  <section class="plate">
+    <h2>Updates</h2>
+    <p>Combiner checks for a new version once a day. When there is one, its menu bar icon gets a dot: right-click it and choose <b>Update to Combiner …</b>. Turn on <b>Update Automatically</b> in the same menu to have updates install by themselves when Combiner quits.</p>
+  </section>
+
+  <p class="small">No Mac at hand? <a href="https://combiner-kwhp.onrender.com">Join a room from your browser.</a></p>
+  <footer>Alpha · for friends · problems or ideas: tell Sam.</footer>
+</main>
+<script>
+  // The newest version and its date, from the update feed next to this page.
+  fetch("appcast.xml", { cache: "no-store" })
+    .then((response) => (response.ok ? response.text() : Promise.reject()))
+    .then((text) => {
+      const xml = new DOMParser().parseFromString(text, "application/xml");
+      const version = xml.querySelector("item > title")?.textContent.replace(/^Combiner\s*/, "");
+      const date = new Date(xml.querySelector("item > pubDate")?.textContent || "");
+      if (!version) return;
+      const when = isNaN(date) ? "" : " · " + date.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+      document.getElementById("version").textContent =
+        "Version " + version + when + " · macOS 14 or later · Apple silicon (M1 or newer)";
+    })
+    .catch(() => {});
+
+  document.getElementById("copy").addEventListener("click", async (event) => {
+    try {
+      await navigator.clipboard.writeText(document.getElementById("cmd").textContent);
+      event.target.textContent = "Copied";
+      setTimeout(() => (event.target.textContent = "Copy"), 1500);
+    } catch {}
+  });
+</script>
+</body>
+</html>
