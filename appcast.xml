@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.7.0</title>
-      <pubDate>Sat, 17 Oct 2026 17:26:29 +0000</pubDate>
-      <sparkle:version>0.7.0</sparkle:version>
-      <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+      <title>Combiner 0.8.0</title>
+      <pubDate>Sat, 17 Oct 2026 18:17:12 +0000</pubDate>
+      <sparkle:version>0.8.0</sparkle:version>
+      <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>A daily anonymous usage summary to TelemetryDeck</li><li>Renders wait for swapping, not memory-pressure warning alone; Live renders watched too</li><li>Live WET with returns + main setting; group marks in the panel and web</li><li>⚙︎ › DAW renders: hide freezes and bounces a background render covers</li><li>Memory-aware background renders (Auto cadence, heavy-project warning, wait for a break, pause while playing)</li><li>ORIGINAL prints, slices and COMP for Live renders</li><li>MIDI and synth patches from Live sets</li><li>Render All with a trailing-space project name, iCloud cloud-only projects stalling indexing, latent Live-beta renders</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.7.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="/rQZKXhkBX+7VA1f4stLTg2dP+2NfTlR2YIREBCKPL9Rlkeq9ycc73Pk7js6Fj1C0Iuy03NabnXRkK1qyWUbCw==" length="11546646"/>
+      <description><![CDATA[<ul><li>Playback volume, and click a waveform to play from there</li><li>The panel fits the screen and can be shortened again</li><li>Make eachSynthHasACombinerFolder pass on a Mac with Omnisphere installed</li><li>Two tests that failed the 0.8.0 release build on a busy runner</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.8.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="yxvOhk9xl//OpFlGM4BkTDCspDitxIFmhOFu7b1Vun5rL66jq+3GMmyWhSJ4IGRuZn55knaOtYjwEyeNV+nrCA==" length="11391900"/>
     </item>
   </channel>
 </rss>
