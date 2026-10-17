@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.6.0</title>
-      <pubDate>Sat, 17 Oct 2026 15:53:21 +0000</pubDate>
-      <sparkle:version>0.6.0</sparkle:version>
-      <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+      <title>Combiner 0.7.0</title>
+      <pubDate>Sat, 17 Oct 2026 17:26:29 +0000</pubDate>
+      <sparkle:version>0.7.0</sparkle:version>
+      <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Impact watch, and log lines with a level and an area</li><li>Take folders share each take, and the dry print is the comp</li><li>Disk reserve setting and warnings, one copy per identity, old-render cap, Advanced and Unusual setups</li><li>Report a problem, and crash reports offered after a crash</li><li>Ableton Live background renders (second Live, groups as stems)</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.6.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="h9t/00Ogd9fn66MPYabBPIR8XwH13nLq6ji4k/jC7trPfVp3OanG0iwfdbhgztfNN187t45pjxZ6lDNEprF/Dg==" length="11222676"/>
+      <description><![CDATA[<ul><li>A daily anonymous usage summary to TelemetryDeck</li><li>Renders wait for swapping, not memory-pressure warning alone; Live renders watched too</li><li>Live WET with returns + main setting; group marks in the panel and web</li><li>⚙︎ › DAW renders: hide freezes and bounces a background render covers</li><li>Memory-aware background renders (Auto cadence, heavy-project warning, wait for a break, pause while playing)</li><li>ORIGINAL prints, slices and COMP for Live renders</li><li>MIDI and synth patches from Live sets</li><li>Render All with a trailing-space project name, iCloud cloud-only projects stalling indexing, latent Live-beta renders</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.7.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="/rQZKXhkBX+7VA1f4stLTg2dP+2NfTlR2YIREBCKPL9Rlkeq9ycc73Pk7js6Fj1C0Iuy03NabnXRkK1qyWUbCw==" length="11546646"/>
     </item>
   </channel>
 </rss>
