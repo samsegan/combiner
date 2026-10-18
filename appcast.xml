@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.9.0</title>
-      <pubDate>Sat, 17 Oct 2026 23:54:06 +0000</pubDate>
-      <sparkle:version>0.9.0</sparkle:version>
-      <sparkle:shortVersionString>0.9.0</sparkle:shortVersionString>
+      <title>Combiner 0.10.0</title>
+      <pubDate>Sun, 18 Oct 2026 21:58:20 +0000</pubDate>
+      <sparkle:version>0.10.0</sparkle:version>
+      <sparkle:shortVersionString>0.10.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Weigh a project by its render, not the DAW's leftovers</li><li>Prints from the project start or the first sound, tails capped, Dock + ⌘-Tab</li><li>Live MIDI on every save (Session View too); Logic's MIDI pass first</li><li>A Live in another home never holds renders up</li><li>The render Logic always reads the arrangement</li><li>A kept render Logic holding other projects doesn't weigh</li><li>Full mix each render, and passes shared as they finish</li><li>Window buttons, a glow on new files, folders for drops</li><li>Simple Mode, a plain room to drag files in and out of</li><li>What the transfer speed actually is, measured</li><li>Pack audio for the wire, losslessly</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.9.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="gSIpmZC+6PfdIox6kA4tYuz48yUJ3mOSy2MutgC2wKbsnqFNcGWSEt66oEjiUkQz0tLk+m/CSgyTQwq3a6xJAQ==" length="11853139"/>
+      <description><![CDATA[<ul><li>New here? The first launch asks the name you show up as and whether your project is shared. Nothing from your projects leaves the Mac until you choose.</li><li>Prepare this project: before a big project's first render (more than 40 tracks, or a heavy one), Combiner asks first, says how many tracks and roughly how many gigabytes each person would get, and renders in batches, quickest first.</li><li>Lighter renders: prints are ORIGINAL + WET by default (DRY and slices are optional in ⚙︎ › Track prints), muted and off tracks aren't rendered in Logic or Live, and prints stop at their last sound.</li><li>Each track's newest version downloads by itself; older versions download when you click them (⚙︎ › Download › Everything brings them all).</li><li>Older received renders you never dragged out go to the Trash 14 days after a newer one arrives. Anything you dragged into a DAW, pinned, or that a saved project uses is never touched. ⚙︎ › Old renders › Received › Keep all turns it off.</li><li>When your internet can't keep up with the renders, Auto renders less often until the room has caught up, and ⚙︎ says so.</li><li>Ableton Live: about twice as fast per render (one launch instead of two), pauses while you play, and handles Session View scenes, VST2 plug-in names, hidden or minimized Live, and exports matched to the right tracks. Tested on sets built and saved by Live itself.</li><li>Renaming a Logic track keeps its plug-ins, patches and file names, and copies you already have pick up the new name.</li><li>Background renders leave Logic's Open Recent list as you had it, and a project you close in Logic reads as closed.</li><li>The room bar has New and Leave next to the room code; recent rooms fold and scroll.</li><li>⚙︎ › Internet relay shows how much the room's relay has carried this month.</li><li>An anonymous daily usage summary is now sent (no names, files, projects or audio). Turn it off in ⚙︎ › Usage data.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="1Q5QvArW7YKSdr1o65jBpofQIBinjHiihNl9GSgX7nE0PgojoSALRVzf+yXo41QmNt1dS41XoOSMn5fW30I2Dw==" length="12241982"/>
     </item>
   </channel>
 </rss>
