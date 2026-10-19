@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.10.5</title>
-      <pubDate>Mon, 19 Oct 2026 14:30:37 +0000</pubDate>
-      <sparkle:version>0.10.5</sparkle:version>
-      <sparkle:shortVersionString>0.10.5</sparkle:shortVersionString>
+      <title>Combiner 0.10.6</title>
+      <pubDate>Mon, 19 Oct 2026 19:32:16 +0000</pubDate>
+      <sparkle:version>0.10.6</sparkle:version>
+      <sparkle:shortVersionString>0.10.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>A take or sample that only changes later on (a new second drop, say) is now shared as a new version, instead of being held back as a copy of someone else's file.</li><li>Joined a new room? The song open in your DAW now counts there, and Render All shares and renders it.</li><li>Render All says what to do when it can't find your song, and every failure is in the log.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.5/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="FIVV5+yvj1S9xnMZNSDciZ5Ux3rjN1sFSZxCE6d2Bup8uO48ipYAFNakjWDplLPv4th+Y6e2vyvHeQ6QBRU/Bg==" length="12207290"/>
+      <description><![CDATA[<ul><li>Only the samples your Logic song actually plays are shared. Leftovers from deleted tracks, files a Save As brought along, and samples that only muted or switched-off tracks play stay out of the room (⚙︎ › Muted and off tracks › Include shares the muted ones).</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.6/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="5pKXKlmgR2Va7uz4aETtWSdXcPZzFIvS8HGw6KkCSp+or+UKDF0NX07yh45To9FIY6DvkNZC71ZWSGlk+0FTDg==" length="12220779"/>
     </item>
   </channel>
 </rss>
