@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.10.1</title>
-      <pubDate>Mon, 19 Oct 2026 00:02:41 +0000</pubDate>
-      <sparkle:version>0.10.1</sparkle:version>
-      <sparkle:shortVersionString>0.10.1</sparkle:shortVersionString>
+      <title>Combiner 0.10.2</title>
+      <pubDate>Mon, 19 Oct 2026 00:12:47 +0000</pubDate>
+      <sparkle:version>0.10.2</sparkle:version>
+      <sparkle:shortVersionString>0.10.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Combiner works with any DAW, and now talks that way: the render line and Render All say "your DAW" instead of "Logic" (for example "NO DAW PROJECT YET" rather than "NO LOGIC PROJECT YET"), and the ⚙︎ help text follows.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="JCPuJ4Ul3eUU8d5CQ6eUNetl3OO69zcmRp++SOooihow1+aIicHRov6jJch/rOWi1RA8xzFWTQfn/XR9k8/gDQ==" length="12161264"/>
+      <description><![CDATA[<ul><li>Ableton Live: background renders keep reverb and delay tails past the last clip instead of cutting them dead, up to ⚙︎ › Advanced › Longest tail (30 s by default).</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.2/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="N61/MXfBeTgcPvXp//7IV7tt6soQt9PX4+HnzdpiigV9AnP75uAe7AMtPcdP6piU3RU5Bs5Y55zjA5NS7MhJCA==" length="12257399"/>
     </item>
   </channel>
 </rss>
