@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.10.7</title>
-      <pubDate>Tue, 20 Oct 2026 20:00:41 +0000</pubDate>
-      <sparkle:version>0.10.7</sparkle:version>
-      <sparkle:shortVersionString>0.10.7</sparkle:shortVersionString>
+      <title>Combiner 0.10.8</title>
+      <pubDate>Tue, 20 Oct 2026 23:05:18 +0000</pubDate>
+      <sparkle:version>0.10.8</sparkle:version>
+      <sparkle:shortVersionString>0.10.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Synth patches you haven't changed (Serum and others) are no longer shared again as new: tiny rounding differences in a saved patch don't count as a change any more.</li><li>Live projects now share only the samples your set plays where you hear them, as Logic projects already do. Samples from deleted clips and tracks, old recordings and muted tracks stay out of the room (⚙︎ › Muted and off tracks › Include shares the muted ones).</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.7/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="Xn+mPf2HyEw5VHCRzk13va8wfMbSJ7t65n10f1GAllC8u3o6BR/Bu3NZdIgs5uGQO2XeobPPSxXKXipk/bYBDg==" length="12343704"/>
+      <description><![CDATA[<ul><li>When a background Live render stops because macOS is asking Live for access to Music or a folder, Combiner now says so: answer the prompt, then press Render All. Before, it blamed the save panel's view, which sent you looking in the wrong place.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.8/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="Cj1gDPe6iK2k4RE/eME2Uz5E4wdcBDG7DUSf585v5s7kfHvGdM4ATxaBySeeerHgZD6309cA9q+wzRRNsYXoDQ==" length="12263864"/>
     </item>
   </channel>
 </rss>
