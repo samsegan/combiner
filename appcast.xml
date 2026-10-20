@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.10.6</title>
-      <pubDate>Mon, 19 Oct 2026 19:32:16 +0000</pubDate>
-      <sparkle:version>0.10.6</sparkle:version>
-      <sparkle:shortVersionString>0.10.6</sparkle:shortVersionString>
+      <title>Combiner 0.10.7</title>
+      <pubDate>Tue, 20 Oct 2026 20:00:41 +0000</pubDate>
+      <sparkle:version>0.10.7</sparkle:version>
+      <sparkle:shortVersionString>0.10.7</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Only the samples your Logic song actually plays are shared. Leftovers from deleted tracks, files a Save As brought along, and samples that only muted or switched-off tracks play stay out of the room (⚙︎ › Muted and off tracks › Include shares the muted ones).</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.6/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="5pKXKlmgR2Va7uz4aETtWSdXcPZzFIvS8HGw6KkCSp+or+UKDF0NX07yh45To9FIY6DvkNZC71ZWSGlk+0FTDg==" length="12220779"/>
+      <description><![CDATA[<ul><li>Synth patches you haven't changed (Serum and others) are no longer shared again as new: tiny rounding differences in a saved patch don't count as a change any more.</li><li>Live projects now share only the samples your set plays where you hear them, as Logic projects already do. Samples from deleted clips and tracks, old recordings and muted tracks stay out of the room (⚙︎ › Muted and off tracks › Include shares the muted ones).</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.10.7/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="Xn+mPf2HyEw5VHCRzk13va8wfMbSJ7t65n10f1GAllC8u3o6BR/Bu3NZdIgs5uGQO2XeobPPSxXKXipk/bYBDg==" length="12343704"/>
     </item>
   </channel>
 </rss>
