@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.11.0</title>
-      <pubDate>Mon, 26 Oct 2026 18:44:56 +0000</pubDate>
-      <sparkle:version>0.11.0</sparkle:version>
-      <sparkle:shortVersionString>0.11.0</sparkle:shortVersionString>
+      <title>Combiner 0.11.1</title>
+      <pubDate>Mon, 26 Oct 2026 22:08:59 +0000</pubDate>
+      <sparkle:version>0.11.1</sparkle:version>
+      <sparkle:shortVersionString>0.11.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>A new look: blued steel, slate panels and steel-blue choices, the same Cold Steel as the plug-ins and REF.</li><li>A steel app icon to match.</li><li>Cards explain things in plain sentences; labels and buttons stay in capitals.</li><li>⚙︎ › Look sets how worn the steel looks: Clean, Brushed or Gritty.</li><li>An idle Combiner no longer redraws its window every 15 seconds.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.11.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="4L8xwAEFNPwPfNo20gohMUpv3WmGVb6FDZTRJUVqus8Fz70RhFeLoPkDOXej6qPNItFD3sZrnM+C8sBygFZKAg==" length="13741380"/>
+      <description><![CDATA[<ul><li>The SEGAN signature now sits at the bottom right of the panel, as on every SEGAN plug-in.</li><li>The download page shows the Cold Steel window.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.11.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="GpOGLIWlWNLbTjQy4KnYhz2QrFT3lqNPTjB2a3PPRr1imsEzIclAlgFxg0y4BgVHjbsokE3CDm2dcdgKfD7YBg==" length="13798298"/>
     </item>
   </channel>
 </rss>
