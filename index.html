@@ -5,73 +5,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Combiner for Mac</title>
   <meta name="description" content="See and drag each other's bounces, stems, MIDI and Serum patches, in the same room or across the internet.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23171817'/%3E%3Crect x='7' y='6' width='4' height='20' fill='%23efa942'/%3E%3Cpath d='M15 16h12M15 11h8M15 21h10' stroke='%23e9e7d4' stroke-width='3'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#13171e">
+  <meta property="og:title" content="Combiner for Mac">
+  <meta property="og:description" content="See and drag each other's bounces, stems, MIDI and Serum patches, in the same room or across the internet.">
+  <meta property="og:image" content="https://samsegan.github.io/combiner/icon.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preload" href="fonts/Barlow-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Barlow-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <style>
-    /* The Warehouse skin, as in the app and the web app. */
+    /* Cold Steel, as in the app (Warehouse.swift's Cold Steel colours,
+       Steel.swift's modules) and the plug-ins: the chassis behind everything,
+       chamfered slate modules with bolts, near-black wells, steel blue only
+       for the one thing to do. The fonts (Barlow, SIL OFL 1.1: fonts/OFL.txt)
+       and the two textures are copies of the plug-ins' in shared/ui/assets;
+       icon.*, favicon.svg come from scripts/make-icon.swift. */
+    @font-face { font-family: "Barlow"; font-weight: 600; font-display: swap; src: url("fonts/Barlow-SemiBold.woff2") format("woff2"); }
+    @font-face { font-family: "Barlow"; font-weight: 700; font-display: swap; src: url("fonts/Barlow-Bold.woff2") format("woff2"); }
+    @font-face { font-family: "Barlow Condensed"; font-weight: 700; font-display: swap; src: url("fonts/BarlowCondensed-Bold.woff2") format("woff2"); }
     :root {
-      --bg: #171817; --plate-top: #31332c; --plate-bottom: #1b1d19; --field: #0a0d0b;
-      --text: #e9e7d4; --text2: #c0c1ad; --muted: #999e88; --hairline: #3d4038;
-      --accent: #efa942; --accent-top: #f9be62; --accent-bottom: #ce8426; --on-accent: #19150c;
-      --bevel-light: rgba(129, 133, 113, 0.55); --bevel-dark: #050706;
-      --label: "DIN Condensed", "DIN Alternate", "Bahnschrift SemiCondensed", "Arial Narrow", "Roboto Condensed", sans-serif;
-      --body: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --chassis: #13171e; --slate: #2b323e; --well: #0a0d12; --edge: #0a0d12;
+      --text: #e9edf2; --text2: #bac3ce; --muted: #93a0b0;
+      --accent: #70a6dc; --accent-top: #8ac0f6; --accent-bottom: #4a80b6; --on-accent: #ffffff; --glow: #bfe0ff;
+      --control-top: #424c5c; --control-bottom: #2f3744; --bevel: #7d8899;
+      --cut: 12px;
+      /* A hex bolt, as ModulePainter.bolt draws them. */
+      --bolt: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cdefs%3E%3ClinearGradient id='s' x1='0.15' y1='0' x2='0.85' y2='1'%3E%3Cstop offset='0' stop-color='%23e3e8ee'/%3E%3Cstop offset='0.45' stop-color='%238c96a3'/%3E%3Cstop offset='1' stop-color='%234a5260'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='6' cy='6.8' r='4.8' fill-opacity='0.5'/%3E%3Cpath d='M10.06 7.09 7.09 10.06 3.03 8.97 1.94 4.91 4.91 1.94 8.97 3.03Z' fill='url(%23s)' stroke='%231b2028' stroke-width='0.6'/%3E%3Ccircle cx='6' cy='6' r='1.9' fill='%2311151b'/%3E%3Ccircle cx='4.53' cy='4.32' r='1.18' fill='%23fff' fill-opacity='0.35'/%3E%3C/svg%3E");
+      --sans: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --wordmark: "Barlow Condensed", "Barlow", "Arial Narrow", sans-serif;
       --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
       color-scheme: dark;
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; }
-    body { background: var(--bg); color: var(--text); font: 16px/1.5 var(--body); -webkit-font-smoothing: antialiased; }
-    main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
-    h1, h2, .btn, .label { font-family: var(--label); font-weight: 700; letter-spacing: 0.035em; text-transform: uppercase; }
-    h1 { font-size: 48px; line-height: 1; margin: 0; display: flex; align-items: center; gap: 14px; }
-    h1 svg { width: 44px; height: 44px; flex: none; }
-    h2 { font-size: 20px; margin: 0 0 12px; color: var(--text); }
+    body { background: var(--chassis); color: var(--text); font: 600 17px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
+    /* The chassis, cover-fitted from the top as the app draws it, with its one
+       cold light from above and the corners falling off into shadow. On its
+       own fixed layer, so a long page on a phone doesn't stretch it. */
+    body::before {
+      content: ""; position: fixed; inset: 0; z-index: -1;
+      background:
+        radial-gradient(farthest-corner at 50% 42%, transparent 55%, rgba(0, 0, 0, 0.55)),
+        linear-gradient(rgba(159, 198, 238, 0.1), rgba(159, 198, 238, 0) 45%),
+        url("ColdSteelChassis.jpg") center top / cover no-repeat,
+        var(--chassis);
+    }
+    main { max-width: 840px; margin: 0 auto; padding: 48px 16px 64px; }
+
+    /* Headings, buttons and labels: Barlow Bold in capitals. Sentences: Barlow SemiBold. */
+    h1, h2, .btn, .tagline, .cmd button { font-weight: 700; text-transform: uppercase; }
+    .brand { display: flex; align-items: center; gap: 18px; }
+    .brand img { width: 96px; height: 96px; flex: none; margin: -8px; }
+    h1 { font: 700 60px/1 var(--wordmark); letter-spacing: 0.14em; margin: 0; }
+    .tagline { font-size: 13px; letter-spacing: 0.1em; color: var(--muted); margin: 8px 0 0; }
+    h2 { font-size: 18px; letter-spacing: 0.06em; line-height: 1.2; margin: 0 0 12px; color: var(--text); }
     p { margin: 0 0 12px; color: var(--text2); }
-    .lede { font-size: 19px; color: var(--text); margin: 18px 0 28px; }
-    .plate {
-      background: linear-gradient(var(--plate-top), var(--plate-bottom));
-      border: 1px solid var(--bevel-dark);
-      box-shadow: inset 1px 1px 0 var(--bevel-light), inset -1px -1px 0 rgba(5, 7, 6, 0.6);
-      padding: 20px; margin: 0 0 16px;
+    p:last-child { margin-bottom: 0; }
+    .lede { font-size: 20px; line-height: 1.45; color: var(--text); margin: 26px 0 28px; }
+    a { color: var(--accent-top); }
+    b { color: var(--text); font-weight: 700; }
+    ol { margin: 0 0 12px; padding-left: 24px; color: var(--text2); }
+    li { margin: 0 0 8px; padding-left: 2px; }
+    li::marker { color: var(--muted); font-weight: 700; }
+    .small { font-size: 15px; color: var(--muted); }
+
+    /* The intro, with the window beside it once there's a picture of it. */
+    .hero { display: grid; gap: 28px 40px; margin: 0 0 24px; }
+    .hero .download { margin-bottom: 0; }
+    .hero.with-shot { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; }
+    .shot { margin: 0; }
+    .shot img { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 22px 50px rgba(0, 0, 0, 0.55); }
+
+    /* A slate module: chamfered top left and bottom right, bolted at each
+       corner, the panel's steel under its face, grime toward the bottom and a
+       lit top edge (ModulePainter.paint). */
+    .module { position: relative; isolation: isolate; margin: 0 0 18px; padding: 24px 28px; filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.6)); }
+    .module::before, .module::after {
+      content: ""; position: absolute; z-index: -1;
+      clip-path: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
     }
+    .module::before { inset: 0; background: var(--edge); }
+    .module::after {
+      inset: 1px;
+      background:
+        var(--bolt) left 8px top 2px / 12px no-repeat,
+        var(--bolt) right 2px top 2px / 12px no-repeat,
+        var(--bolt) right 8px bottom 2px / 12px no-repeat,
+        var(--bolt) left 2px bottom 2px / 12px no-repeat,
+        linear-gradient(rgba(125, 136, 153, 0.75), rgba(125, 136, 153, 0.75)) top / 100% 1px no-repeat,
+        linear-gradient(rgba(5, 7, 10, 0), rgba(5, 7, 10, 0.32)) bottom / 100% 40px no-repeat,
+        linear-gradient(rgba(50, 58, 71, 0.4), rgba(43, 50, 62, 0.4) 50%, rgba(37, 43, 53, 0.4)),
+        url("ColdSteelPanel.jpg") 0 0 / 256px,
+        var(--slate);
+    }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 0 0 18px; }
+    .pair .module { margin: 0; }
+
+    .download { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+    /* The one primary action: steel blue, a lit top edge and a halo. */
     .btn {
-      display: inline-block; font-size: 22px; padding: 14px 28px 12px; text-decoration: none;
-      color: var(--on-accent); background: linear-gradient(var(--accent-top), var(--accent-bottom));
-      border: 1px solid var(--bevel-dark); box-shadow: inset 1px 1px 0 rgba(255, 236, 200, 0.6);
+      display: inline-block; font-size: 21px; letter-spacing: 0.06em; padding: 13px 28px 12px; border-radius: 3px;
+      text-decoration: none; color: var(--on-accent); text-shadow: 0 1px 1px rgba(16, 40, 72, 0.55);
+      background: linear-gradient(var(--accent-top), var(--accent-bottom));
+      box-shadow: inset 0 1px 0 rgba(214, 234, 255, 0.6), 0 0 0 3px rgba(112, 166, 220, 0.22), 0 2px 0 rgba(0, 0, 0, 0.5);
     }
-    .btn:hover { filter: brightness(1.06); }
-    .meta { font: 13px/1.4 var(--mono); color: var(--muted); margin-top: 12px; letter-spacing: 0.02em; }
-    ol { margin: 0; padding-left: 22px; color: var(--text2); }
-    li { margin: 0 0 8px; }
-    b { color: var(--text); font-weight: 600; }
-    .cmd { display: flex; gap: 8px; align-items: stretch; margin: 4px 0 8px; }
-    .cmd code {
-      flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; padding: 10px 12px;
-      background: var(--field); border: 1px solid var(--hairline); font: 13px/1.4 var(--mono); color: var(--text);
+    .btn:hover { filter: brightness(1.07); }
+    .btn:active { filter: brightness(0.95); }
+    .meta { font-size: 15px; color: var(--muted); }
+
+    /* A recessed well (Sunken): near-black, an inner shadow, a glint top left
+       and a lit lip under it. */
+    .well {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 35%), var(--well);
+      border: 1px solid #05070a; border-radius: 4px;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 0 2px rgba(0, 0, 0, 0.155),
+        inset 0 0 0 3px rgba(0, 0, 0, 0.11), 0 2px 0 -1px rgba(86, 98, 122, 0.5);
     }
+    .cmd { display: flex; gap: 10px; align-items: stretch; margin: 4px 0 2px; }
+    .cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; padding: 11px 13px; font: 13px/1.4 var(--mono); color: var(--text); }
+    /* A raised slate button; its caption lights while it's pressed. */
     .cmd button {
-      font: 700 15px/1 var(--label); letter-spacing: 0.035em; text-transform: uppercase; color: var(--text);
-      background: linear-gradient(#4d5047, #1f221e); border: 1px solid var(--bevel-dark); padding: 0 14px; cursor: pointer;
+      font: 700 15px/1 var(--sans); letter-spacing: 0.06em; color: var(--text2); cursor: pointer;
+      padding: 0 16px; border: 0; border-radius: 3px;
+      background: linear-gradient(var(--control-top), var(--control-bottom));
+      box-shadow: inset 0 1px 0 rgba(125, 136, 153, 0.6), 0 1.5px 0 rgba(0, 0, 0, 0.5);
     }
-    a { color: var(--accent); }
-    .small { font-size: 14px; color: var(--muted); }
-    footer { margin-top: 32px; font-size: 14px; color: var(--muted); }
+    .cmd button:active { color: var(--glow); background: linear-gradient(var(--control-bottom), var(--control-top)); }
+    footer { margin-top: 30px; font-size: 15px; color: var(--muted); }
+    footer p { color: var(--muted); }
+
+    @media (max-width: 760px) {
+      .hero.with-shot { grid-template-columns: 1fr; }
+      .shot { max-width: 400px; width: 100%; justify-self: center; }
+      .pair { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      main { padding-top: 32px; }
+      .brand { gap: 14px; }
+      .brand img { width: 72px; height: 72px; margin: -6px; }
+      h1 { font-size: 46px; letter-spacing: 0.12em; }
+      .tagline { font-size: 11.5px; }
+      .lede { font-size: 18px; }
+      .module { padding: 22px 20px; }
+      .btn { font-size: 19px; padding: 13px 22px 12px; }
+    }
   </style>
 </head>
 <body>
 <main>
-  <h1>
-    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#2d2f2b"/><rect x="7" y="6" width="4" height="20" fill="#efa942"/><path d="M15 16h12M15 11h8M15 21h10" stroke="#e9e7d4" stroke-width="3"/></svg>
-    Combiner
-  </h1>
-  <p class="lede">Everyone in a session sees and drags each other's bounces, stems, MIDI and Serum patches, whether you're in the same room or in different cities. Type the same room code. It sits in your Dock and your menu bar.</p>
+  <div class="hero">
+    <div>
+      <header class="brand">
+        <img src="icon.svg" width="96" height="96" alt="">
+        <div>
+          <h1>Combiner</h1>
+          <p class="tagline">Room share / drag anything in or out</p>
+        </div>
+      </header>
+      <p class="lede">Everyone in a session sees and drags each other's bounces, stems, MIDI and Serum patches, whether you're in the same room or in different cities. Type the same room code. It sits in your Dock and your menu bar.</p>
 
-  <section class="plate">
-    <a class="btn" href="https://github.com/samsegan/combiner/releases/latest/download/Combiner.dmg">Download for Mac</a>
-    <div class="meta" id="version">macOS 14 or later · Apple silicon (M1 or newer)</div>
-  </section>
+      <section class="module download">
+        <a class="btn" href="https://github.com/samsegan/combiner/releases/latest/download/Combiner.dmg">Download for Mac</a>
+        <div class="meta" id="version">macOS 14 or later · Apple silicon (M1 or newer)</div>
+      </section>
+    </div>
 
-  <section class="plate">
+    <!-- SCREENSHOT SPOT. A picture of the new Cold Steel window goes here, added
+         at release once the Mac reskin has landed: save it as site/window.jpg
+         (the narrow panel in a room, at 2x: about 946 × 1232 for the default
+         473 × 616 pt window) and set the width and height below to its size.
+         Until window.jpg exists this figure stays hidden and the intro runs
+         full width, so the page can be published without it. -->
+    <figure class="shot" hidden>
+      <img src="window.jpg" width="946" height="1232" alt="Combiner's window in a room: the room code, Auto-share and Render All, and a lane of each person's bounces, stems and MIDI with their waveforms."
+           onload="this.parentElement.hidden = false; this.closest('.hero').classList.add('with-shot')">
+    </figure>
+  </div>
+
+  <section class="module">
     <h2>The first time you open it</h2>
     <p>Combiner is an early build that Apple hasn't checked yet, so macOS asks you to approve it once. After that it opens normally, and updates install without asking again.</p>
     <ol>
@@ -82,31 +193,35 @@
     <p class="small">On macOS 14 Sonoma you can instead right-click Combiner in Applications, choose Open, then Open again.</p>
   </section>
 
-  <section class="plate">
+  <section class="module">
     <h2>Or install from Terminal</h2>
     <p>One line that downloads Combiner into Applications and opens it, with no warning to approve:</p>
     <div class="cmd">
-      <code id="cmd">curl -fsSL https://samsegan.github.io/combiner/install.sh | bash</code>
+      <code class="well" id="cmd">curl -fsSL https://samsegan.github.io/combiner/install.sh | bash</code>
       <button type="button" id="copy">Copy</button>
     </div>
   </section>
 
-  <section class="plate">
-    <h2>What it asks for</h2>
-    <ol>
-      <li><b>Local Network</b>: to find the people in your room who are nearby.</li>
-      <li><b>Folders</b> (Music, Documents, Desktop): to see the projects and bounces you share.</li>
-      <li><b>Accessibility</b>, only for background renders.</li>
-    </ol>
-  </section>
+  <div class="pair">
+    <section class="module">
+      <h2>What it asks for</h2>
+      <ol>
+        <li><b>Local Network</b>: to find the people in your room who are nearby.</li>
+        <li><b>Folders</b> (Music, Documents, Desktop): to see the projects and bounces you share.</li>
+        <li><b>Accessibility</b>, only for background renders.</li>
+      </ol>
+    </section>
 
-  <section class="plate">
-    <h2>Updates</h2>
-    <p>Combiner checks for a new version once a day. When there is one, its menu bar icon gets a dot: right-click it and choose <b>Update to Combiner …</b>. Turn on <b>Update Automatically</b> in the same menu to have updates install by themselves when Combiner quits.</p>
-  </section>
+    <section class="module">
+      <h2>Updates</h2>
+      <p>Combiner checks for a new version once a day. When there is one, its menu bar icon gets a dot: right-click it and choose <b>Update to Combiner …</b>. Turn on <b>Update Automatically</b> in the same menu to have updates install by themselves when Combiner quits.</p>
+    </section>
+  </div>
 
-  <p class="small">No Mac at hand? <a href="https://combiner-kwhp.onrender.com">Join a room from your browser.</a></p>
-  <footer>Alpha · for friends · problems or ideas: tell Sam.</footer>
+  <footer>
+    <p>No Mac at hand? <a href="https://combiner-kwhp.onrender.com">Join a room from your browser.</a></p>
+    <p>Alpha · for friends · problems or ideas: tell Sam.</p>
+  </footer>
 </main>
 <script>
   // The newest version and its date, from the update feed next to this page.
