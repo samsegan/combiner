@@ -3,13 +3,13 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.12.0</title>
-      <pubDate>Mon, 26 Oct 2026 22:13:05 +0000</pubDate>
-      <sparkle:version>0.12.0</sparkle:version>
-      <sparkle:shortVersionString>0.12.0</sparkle:shortVersionString>
+      <title>Combiner 0.12.1</title>
+      <pubDate>Tue, 27 Oct 2026 01:03:31 +0000</pubDate>
+      <sparkle:version>0.12.1</sparkle:version>
+      <sparkle:shortVersionString>0.12.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>Sam's signature at the bottom right of the window, in its own row under the footer.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.12.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="Fw+Ii+XZMrzoFmqWISYMTRQZCGDdmoQI57AKpmsY4ymm3rIjMBfWftn/nXGXLIxdUj1x+xdcPg7m3KZQnohJDA==" length="13718758"/>
+      <description><![CDATA[<ul><li>The title now reads "COMBINER BY SEGAN": the signature sits beside the name instead of at the bottom right, and the room list gets that row back.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.12.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="PP8E6gDR7cS6945o/taDsokEgcvt7eUSLIupJZdq3Xpiyeu4wGHCa+nP+LxcX7uoJx/qMX4H5waiuSNAExGaAQ==" length="13722821"/>
     </item>
   </channel>
 </rss>
