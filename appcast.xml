@@ -3,13 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.12.1</title>
-      <pubDate>Tue, 27 Oct 2026 01:03:31 +0000</pubDate>
-      <sparkle:version>0.12.1</sparkle:version>
-      <sparkle:shortVersionString>0.12.1</sparkle:shortVersionString>
+      <title>Combiner 0.13.0</title>
+      <pubDate>Wed, 28 Oct 2026 07:31:12 +0000</pubDate>
+      <sparkle:version>0.13.0</sparkle:version>
+      <sparkle:shortVersionString>0.13.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <description><![CDATA[<ul><li>The title now reads "COMBINER BY SEGAN": the signature sits beside the name instead of at the bottom right, and the room list gets that row back.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.12.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="PP8E6gDR7cS6945o/taDsokEgcvt7eUSLIupJZdq3Xpiyeu4wGHCa+nP+LxcX7uoJx/qMX4H5waiuSNAExGaAQ==" length="13722821"/>
+      <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
+      <description><![CDATA[<ul><li>A simpler room. Each person's lane now reads like their DAW's track list: their song, its tracks in the DAW's order and colours, and each track's prints folded inside it (the newest WET, ORIGINAL, MIDI and synth patch; older renders behind a fold). Click LATEST beside Search to see everything in the order it arrived, under Today, Yesterday and Earlier.</li><li>Less text on every row: a name, a picture and a few icons. An hourglass means a synth patch changed since the last render, a crossed-out speaker a muted track, a bin a deleted one. Rest the pointer on a row for 2 seconds for the details: the song, your friend's DAW, when it was made, how long, the plug-ins.</li><li>Synth patches show their synth's icon: Serum, Phase Plant, Vital, Surge XT and Pigments by their makers' icons, anything else by a plain glyph.</li><li>The arrow keys move through the list. Space plays, → and ← open and close a track, Tab goes to the next person, Esc stops. While something plays, moving to another row plays that one.</li><li>⚙︎ › View has the old list back (Classic list), more words on hover (Detailed), rows in each person's colour, and plain synth glyphs, if you prefer them.</li><li>The Cold Steel look is clean by default: no scratches, flat blue-grey. ⚙︎ › Look › Brushed or Gritty brings the grit back.</li><li>Samples your samplers play (Sampler, Quick Sampler, Drum Machine Designer pads) are shared when a track you hear plays them, and leftover copies nothing plays aren't.</li><li>Rooms are now private end to end: everything after the handshake is encrypted, and the room code is much harder to guess from what the relay sees. Everyone in a room needs this version: Combiner says so when someone is still on an older one.</li><li>Background renders start Off. Turn them on in ⚙︎ › Background renders, or press Render All.</li><li>Files over 250 MB don't go over the internet (on your own network they do). ⚙︎ › Largest file changes the limit.</li><li>Sturdier: a bad file list from someone can't crash or blank your room, and a Combiner that crashes at launch can start in a safe mode and recover.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.13.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="pfuLoWU+QB50aGNlHWh5nSjKPavRlJnBrcqirIejg0v9t2fgZag2uT1Tnh42XJipCI4ZomYDgKpipkeQ0bi9Aw==" length="14284837"/>
     </item>
   </channel>
 </rss>
