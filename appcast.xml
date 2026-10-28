@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.15.0</title>
-      <pubDate>Wed, 28 Oct 2026 15:34:46 +0000</pubDate>
-      <sparkle:version>0.15.0</sparkle:version>
-      <sparkle:shortVersionString>0.15.0</sparkle:shortVersionString>
+      <title>Combiner 0.15.1</title>
+      <pubDate>Wed, 28 Oct 2026 17:44:30 +0000</pubDate>
+      <sparkle:version>0.15.1</sparkle:version>
+      <sparkle:shortVersionString>0.15.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Invite the people you make music with. Everyone you've been in a room with is saved. Press Invite in the room bar and click a name: they get a notification and a card, and Join puts them in your song's room. The room code is now only for meeting someone new (Copy, for someone new).</li><li>Someone who isn't on gets your invite when they open Combiner, for 24 hours by default. Join takes them to your room, and a line takes them back to theirs.</li><li>Right-click someone in Invite to remove or block them. ⚙︎ › People has the choices: who can invite you, whether you show as online, how long invites wait, notification or card only, and Open Combiner at login.</li><li>If someone in a room uses the name of a person you've met but isn't them, their lane says NEW.</li><li>The web app has all of it too.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.15.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="Tltf+JUZra8+XdkqlBVqLmr3RcpLPuDU0YZUvfaqLiLavIFPw4L7hCkXsjGfmutu7HYE2LmEcg+Q3zkPK5vIBQ==" length="14681625"/>
+      <description><![CDATA[<ul><li>Rooms no longer listen for Combiners from before 0.13, so the relay never sees a room's old, easy-to-crack tag. Anyone still on an older Combiner has to update to join.</li><li>When Combiner starts in safe mode, it opens the update window right away, so a fix reaches you without waiting.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.15.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="BBtEdpbI65OH2byzqUAhWaMrEwWT4+jxI6Z4yKyGaKTPL8GYhVgSz4VQV3VTC5Oh1/QfXyrJgoN8s/gyjdVODw==" length="14645895"/>
     </item>
   </channel>
 </rss>
