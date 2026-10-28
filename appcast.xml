@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.14.0</title>
-      <pubDate>Wed, 28 Oct 2026 15:26:39 +0000</pubDate>
-      <sparkle:version>0.14.0</sparkle:version>
-      <sparkle:shortVersionString>0.14.0</sparkle:shortVersionString>
+      <title>Combiner 0.15.0</title>
+      <pubDate>Wed, 28 Oct 2026 15:34:46 +0000</pubDate>
+      <sparkle:version>0.15.0</sparkle:version>
+      <sparkle:shortVersionString>0.15.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>▶ on a synth patch plays it: the patch opens in its own synth on your Mac (Serum 2, Current and any Audio Unit synth; Surge XT too) and plays the track's MIDI, or a short phrase when there's none. A track with no wet render plays its patch the same way.</li><li>MIDI previews start at the first note, not at the start of the project (a part at bar 31 used to open with a minute of silence).</li><li>A SORT menu beside TRACKS | LATEST: DAW order, newest, oldest, A–Z, length, or by type (MIDI, patches, samples, recordings, renders, then instrument and audio tracks). Each view keeps its own.</li><li>The hover card shows after a second, and names where things come from: Project, DAW, From computer.</li><li>Under the hood: each Combiner now proves who it is to the others in a room, for saved people and invites coming next. Everyone in a room needs 0.14.0.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.14.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="X9tTd5dBNdAPsifSbIT0AZOSx1D/c0+yvkHhYeWjFlJf+LCakgJNDViG1OmQbbvRq5GOeFoBp4cPEBA8+PyiDQ==" length="14528434"/>
+      <description><![CDATA[<ul><li>Invite the people you make music with. Everyone you've been in a room with is saved. Press Invite in the room bar and click a name: they get a notification and a card, and Join puts them in your song's room. The room code is now only for meeting someone new (Copy, for someone new).</li><li>Someone who isn't on gets your invite when they open Combiner, for 24 hours by default. Join takes them to your room, and a line takes them back to theirs.</li><li>Right-click someone in Invite to remove or block them. ⚙︎ › People has the choices: who can invite you, whether you show as online, how long invites wait, notification or card only, and Open Combiner at login.</li><li>If someone in a room uses the name of a person you've met but isn't them, their lane says NEW.</li><li>The web app has all of it too.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.15.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="Tltf+JUZra8+XdkqlBVqLmr3RcpLPuDU0YZUvfaqLiLavIFPw4L7hCkXsjGfmutu7HYE2LmEcg+Q3zkPK5vIBQ==" length="14681625"/>
     </item>
   </channel>
 </rss>
