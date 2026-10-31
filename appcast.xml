@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.16.0</title>
-      <pubDate>Sat, 31 Oct 2026 00:12:40 +0000</pubDate>
-      <sparkle:version>0.16.0</sparkle:version>
-      <sparkle:shortVersionString>0.16.0</sparkle:shortVersionString>
+      <title>Combiner 0.17.0</title>
+      <pubDate>Sat, 31 Oct 2026 15:10:38 +0000</pubDate>
+      <sparkle:version>0.17.0</sparkle:version>
+      <sparkle:shortVersionString>0.17.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Add Fracture, Minimal Poster and Pixel / Game on Mac and in the browser; keep Cold Steel and Warehouse.</li><li>Start new profiles in Fracture, with appearance choices saved for future launches.</li><li>Add Skin colour waveforms alongside RGB, Blue, White, Black and Custom. Choose waveform colours independently of the skin.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.16.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="XCOYrHunOfgFIVaw8AZPfoFiMn2cj4ddFV1EEXdCSDB+a0naPChtW4noaEw0VMlnrJ5asYI8CU6iGUfqLMipAQ==" length="17124540"/>
+      <description><![CDATA[<ul><li>Five new skins: 3D / Exploratory, Sculptural / Organic, Minimal / Instrument, Cinematic / Abstract, and Ethereal / Light.</li><li>Ethereal uses solid pearl panels with clearer controls and text, plus a restrained opalescent finish.</li><li>Existing skin choices and RGB waveform settings are preserved.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.17.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="mk7Nn4byAqouX5MkK4jYtbOTSG5zVfac7Dm5Ve1CEySL3EP15VASzUSlRAyuPT+Xga2tJHUs6A/6OsRkFatEAg==" length="20091981"/>
     </item>
   </channel>
 </rss>
