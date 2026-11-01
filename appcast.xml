@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.17.1</title>
-      <pubDate>Sat, 31 Oct 2026 21:21:21 +0000</pubDate>
-      <sparkle:version>0.17.1</sparkle:version>
-      <sparkle:shortVersionString>0.17.1</sparkle:shortVersionString>
+      <title>Combiner 0.18.0</title>
+      <pubDate>Sun, 01 Nov 2026 16:37:49 +0000</pubDate>
+      <sparkle:version>0.18.0</sparkle:version>
+      <sparkle:shortVersionString>0.18.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Sharper Spatial, Organic, Cinematic and Ethereal artwork on Retina displays.</li><li>More consistent background detail when resizing windows, with crisp corners and edges.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.17.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="xyXSlsiVHa4drh3tkVAsZCz/quwh2mfJUtj3+HLxC6qKC++7sRLmkHpNNl8GqAKRzJn0n6ajFL1pXmLmUdUXDQ==" length="19358783"/>
+      <description><![CDATA[<ul><li>Replace Fracture's square artwork tiles with connected smoked-glass frame edges and detailed crack highlights.</li><li>Button edges react to presses and retain a brief memory of repeated interaction, then settle. Reduced Motion keeps the material still.</li><li>Keep waveforms, graphs, filenames and control labels clear.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.18.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="kr1EMWyRIBSi42AehHlHZPPuRO6hkuFIiaqT2T8DcYPX+1yICl0HuZdlFum3dqsm4Nu7h2yZrtZ/sxfAQM/wAg==" length="19761098"/>
     </item>
   </channel>
 </rss>
