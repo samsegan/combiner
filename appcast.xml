@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.19.0</title>
-      <pubDate>Mon, 23 Nov 2026 06:42:43 +0000</pubDate>
-      <sparkle:version>0.19.0</sparkle:version>
-      <sparkle:shortVersionString>0.19.0</sparkle:shortVersionString>
+      <title>Combiner 0.20.0</title>
+      <pubDate>Mon, 23 Nov 2026 14:36:33 +0000</pubDate>
+      <sparkle:version>0.20.0</sparkle:version>
+      <sparkle:shortVersionString>0.20.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Drag several files at once: Shift-click picks every row from the selected one to the one you click, Cmd-click adds or drops one, then drag any of them into your DAW and they all come along.</li><li>Dragging a dropped folder takes every file in it.</li><li>Space stops whatever is playing.</li><li>Cold Steel is the default look; the other skins moved under Untested skins in the settings.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.19.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="+e9Jdy3lP/ULBPMrI9xSLYHyX4wt49cHbqdXVUnkeG3M6TgsdmBB1dBHnY3u9IAEKXONXAL32JA7S6NhhY+CCg==" length="19761772"/>
+      <description><![CDATA[<ul><li>New: How sharing works. Click the ? beside Auto-share for a picture of each mode: Auto-share on, Auto-share off and Simple Mode, and the three render paces (Off, Auto, every few minutes). The one you're in is outlined.</li><li>It also opens once after the first-launch card, and from the menu (How Sharing Works…).</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.20.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="GC1kpe9eJQIta8UMITVzmtra+abf4ytzbFs6tU8ZxtPbCxXbn0OsnlZI2ZXzL+OdHLplNk537UdUQqOCphNGDA==" length="19793840"/>
     </item>
   </channel>
 </rss>
