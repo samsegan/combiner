@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.20.0</title>
-      <pubDate>Mon, 23 Nov 2026 14:36:33 +0000</pubDate>
-      <sparkle:version>0.20.0</sparkle:version>
-      <sparkle:shortVersionString>0.20.0</sparkle:shortVersionString>
+      <title>Combiner 0.20.1</title>
+      <pubDate>Tue, 24 Nov 2026 18:02:20 +0000</pubDate>
+      <sparkle:version>0.20.1</sparkle:version>
+      <sparkle:shortVersionString>0.20.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>New: How sharing works. Click the ? beside Auto-share for a picture of each mode: Auto-share on, Auto-share off and Simple Mode, and the three render paces (Off, Auto, every few minutes). The one you're in is outlined.</li><li>It also opens once after the first-launch card, and from the menu (How Sharing Works…).</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.20.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="GC1kpe9eJQIta8UMITVzmtra+abf4ytzbFs6tU8ZxtPbCxXbn0OsnlZI2ZXzL+OdHLplNk537UdUQqOCphNGDA==" length="19793840"/>
+      <description><![CDATA[<ul><li>Fixed: on a short window, the header no longer slides up under the close, minimize and zoom buttons.</li><li>Fixed: the window keeps its minimum size, so it can't be squeezed until the controls are cut off. A window saved too small opens at the minimum.</li><li>Search now shows when it is hiding files.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.20.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="arOVX/fmw9Xq4jQEZbPHBHmxg3LxZnYItVUujfd7VZ2TRpe77CSXxxvsXBd67TCt2/qsGrLNUZ2CrspsYedLCQ==" length="19772087"/>
     </item>
   </channel>
 </rss>
