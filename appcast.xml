@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.20.1</title>
-      <pubDate>Tue, 24 Nov 2026 18:02:20 +0000</pubDate>
-      <sparkle:version>0.20.1</sparkle:version>
-      <sparkle:shortVersionString>0.20.1</sparkle:shortVersionString>
+      <title>Combiner 0.21.0</title>
+      <pubDate>Tue, 24 Nov 2026 20:04:33 +0000</pubDate>
+      <sparkle:version>0.21.0</sparkle:version>
+      <sparkle:shortVersionString>0.21.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Fixed: on a short window, the header no longer slides up under the close, minimize and zoom buttons.</li><li>Fixed: the window keeps its minimum size, so it can't be squeezed until the controls are cut off. A window saved too small opens at the minimum.</li><li>Search now shows when it is hiding files.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.20.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="arOVX/fmw9Xq4jQEZbPHBHmxg3LxZnYItVUujfd7VZ2TRpe77CSXxxvsXBd67TCt2/qsGrLNUZ2CrspsYedLCQ==" length="19772087"/>
+      <description><![CDATA[<ul><li>Logic: a project shares its instrument tracks' MIDI as soon as you save it, with no render.</li><li>Logic: a track with several regions or a loop is one MIDI file, not one per region or repeat.</li><li>Your own tracks whose synth is still on Init are listed, dimmed, instead of missing.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.21.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="qfCDrVMYDn7yuK3hIvF7pAgXfekhVrLp3NNsld09YGZNv+4Qb+YP7rtyJ1FYwZMlODq7FQhOibKbKrF6Wo8bAg==" length="20028128"/>
     </item>
   </channel>
 </rss>
