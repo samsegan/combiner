@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.23.0</title>
-      <pubDate>Wed, 25 Nov 2026 02:47:33 +0000</pubDate>
-      <sparkle:version>0.23.0</sparkle:version>
-      <sparkle:shortVersionString>0.23.0</sparkle:shortVersionString>
+      <title>Combiner 0.24.0</title>
+      <pubDate>Wed, 25 Nov 2026 03:23:35 +0000</pubDate>
+      <sparkle:version>0.24.0</sparkle:version>
+      <sparkle:shortVersionString>0.24.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Nothing renders by itself any more. The background render settings are greyed out and coming in a later version; Render All still runs when you click it.</li><li>The best way to get a wet stem: bounce the track in place in your DAW and it shows up in Combiner on its own. The "How sharing works" guide now says so.</li><li>The largest file that goes over the internet is 200 MB (50, 100 or 200 MB in the settings). On the same network there is still no limit.</li><li>A drop of files adds up to 1 GB at most.</li><li>Join takes whole room codes only: 8 characters, or a room you have been in before.</li><li>Slow uploads are no longer cut off part way through.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.23.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="2keGGnrWF3UpVrM9kWe24mfmKcObUA9oy+8JjgSZZC1RDZa09UFy5ibAZQvCEdl0x5rDjBGbzU91UMSGis2SCA==" length="20181005"/>
+      <description><![CDATA[<ul><li>Combiner is now signed and checked by Apple, so it opens straight from the download with no warning.</li><li>macOS asks once more for Accessibility and your folders. If Combiner already looks switched on in System Settings › Privacy &amp; Security › Accessibility, turn it off and on again.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.24.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="wH1L9wbsZtXv/vtXUnwnN4BQYTrS3Vcc3FC7ELvW4YOd+Op38YCZKQRPerbe8b4xG11T/fISgGFeOPse5S7IDw==" length="20198034"/>
     </item>
   </channel>
 </rss>
