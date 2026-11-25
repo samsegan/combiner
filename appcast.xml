@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.24.0</title>
-      <pubDate>Wed, 25 Nov 2026 03:23:35 +0000</pubDate>
-      <sparkle:version>0.24.0</sparkle:version>
-      <sparkle:shortVersionString>0.24.0</sparkle:shortVersionString>
+      <title>Combiner 0.25.0</title>
+      <pubDate>Wed, 25 Nov 2026 18:41:49 +0000</pubDate>
+      <sparkle:version>0.25.0</sparkle:version>
+      <sparkle:shortVersionString>0.25.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Combiner is now signed and checked by Apple, so it opens straight from the download with no warning.</li><li>macOS asks once more for Accessibility and your folders. If Combiner already looks switched on in System Settings › Privacy &amp; Security › Accessibility, turn it off and on again.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.24.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="wH1L9wbsZtXv/vtXUnwnN4BQYTrS3Vcc3FC7ELvW4YOd+Op38YCZKQRPerbe8b4xG11T/fISgGFeOPse5S7IDw==" length="20198034"/>
+      <description><![CDATA[<ul><li>MIDI previews show their notes in the middle, no longer pushed to the right edge; clicking a note still plays from that note.</li><li>The hover card over a row no longer stays in front of other apps after you switch away.</li><li>The welcome card comes first: Combiner asks for Documents and Desktop only after you've answered it.</li><li>A damaged Ableton Live or FL Studio project no longer stops Combiner from starting, and older FL projects find their FL Studio samples.</li><li>A Logic project saved on the Desktop no longer shares your whole Desktop.</li><li>Downloads are sturdier: another member can't spoil or block yours, files stop being served once unshared, and leaving a room frees its download slot.</li><li>Render All no longer renames or trashes renders a project still plays, and no longer starts from a web link.</li><li>No more false "safe mode" after a quick quit.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.25.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="AL6BxW537GWYJ2QZm6SpavV3HhdVuQqjv2RPRNQZhi0gJfd1MJF6+TUaRA66uzDksC5zg5p7XdFAVwna206CBA==" length="20206590"/>
     </item>
   </channel>
 </rss>
