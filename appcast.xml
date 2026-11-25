@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.22.0</title>
-      <pubDate>Wed, 25 Nov 2026 00:45:03 +0000</pubDate>
-      <sparkle:version>0.22.0</sparkle:version>
-      <sparkle:shortVersionString>0.22.0</sparkle:shortVersionString>
+      <title>Combiner 0.23.0</title>
+      <pubDate>Wed, 25 Nov 2026 02:47:33 +0000</pubDate>
+      <sparkle:version>0.23.0</sparkle:version>
+      <sparkle:shortVersionString>0.23.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>FL Studio projects now share their samples, MIDI and synth patches every time you save, with no render needed</li><li>Each Channel rack channel shows up as a track in the room</li><li>A project saved loose in a shared Projects folder no longer shares every audio file in that folder</li><li>The header starts just under the window buttons</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.22.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="jZtZM8oPyUs7GjlN4fSv43ZGeYgrRqvkOCPivjor4mqM3upgP+SOsN5i0IvLOmjNAF03i7U0MAdb7xWqDQGpAQ==" length="20182495"/>
+      <description><![CDATA[<ul><li>Nothing renders by itself any more. The background render settings are greyed out and coming in a later version; Render All still runs when you click it.</li><li>The best way to get a wet stem: bounce the track in place in your DAW and it shows up in Combiner on its own. The "How sharing works" guide now says so.</li><li>The largest file that goes over the internet is 200 MB (50, 100 or 200 MB in the settings). On the same network there is still no limit.</li><li>A drop of files adds up to 1 GB at most.</li><li>Join takes whole room codes only: 8 characters, or a room you have been in before.</li><li>Slow uploads are no longer cut off part way through.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.23.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="2keGGnrWF3UpVrM9kWe24mfmKcObUA9oy+8JjgSZZC1RDZa09UFy5ibAZQvCEdl0x5rDjBGbzU91UMSGis2SCA==" length="20181005"/>
     </item>
   </channel>
 </rss>
