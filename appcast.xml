@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.27.0</title>
-      <pubDate>Wed, 25 Nov 2026 21:22:17 +0000</pubDate>
-      <sparkle:version>0.27.0</sparkle:version>
-      <sparkle:shortVersionString>0.27.0</sparkle:shortVersionString>
+      <title>Combiner 0.28.0</title>
+      <pubDate>Wed, 25 Nov 2026 23:22:44 +0000</pubDate>
+      <sparkle:version>0.28.0</sparkle:version>
+      <sparkle:shortVersionString>0.28.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Recent rooms is now a button next to the room code: click it, then click a room to switch. Going back is one more click.</li><li>Leave has moved into the room menu (click the room code), just above Reset room. While you're offline it reads Rejoin room.</li><li>One Sort menu replaces the Tracks / Latest switch: DAW Order shows each song with its tracks, and every other order (Newest, Oldest, A–Z, Longest, Type) is one list.</li><li>The relay address is no longer a setting.</li><li>Disk space to keep free is now 2, 5 or 10 GB (2 GB by default), and a Low disk space card shows at launch when under 15 GB is free.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.27.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="qByba4vuobtS34phorfUOLCfb3w8Jgj+Q+wpDRIcHlAV44oZNbJ4rjxNvZ2bhgQFRTCYT7v8mlASADalOu9YCQ==" length="20231701"/>
+      <description><![CDATA[<ul><li>Drop the usage-data note and the "Waiting for the room" card</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.28.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="JCkzUH97bKfL9s+icqC7L7uNr5oVFvxVLwn9t6bk7eZDsU1g1QxoX9GIolZgQQt7VTv96mnBxwSf6+8brbmMCQ==" length="20232287"/>
     </item>
   </channel>
 </rss>
