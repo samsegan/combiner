@@ -1,0 +1,8 @@
+version: 0.1.0
+files:
+  - url: https://github.com/samsegan/combiner/releases/download/combiner-win-v0.1.0/Combiner-0.1.0-Windows-Setup.exe
+    sha512: E6o8DfPoGtdzX8Ize/qTZLl2AUoSDk38V8F9vXh+Ut8uC5xyicv+7HkqDLF2UuhLp0VuSM0gI57CEZNVhq8TNQ==
+    size: 115972763
+path: https://github.com/samsegan/combiner/releases/download/combiner-win-v0.1.0/Combiner-0.1.0-Windows-Setup.exe
+sha512: E6o8DfPoGtdzX8Ize/qTZLl2AUoSDk38V8F9vXh+Ut8uC5xyicv+7HkqDLF2UuhLp0VuSM0gI57CEZNVhq8TNQ==
+releaseDate: '2026-11-25T19:11:34.727Z'
