@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.21.0</title>
-      <pubDate>Tue, 24 Nov 2026 20:04:33 +0000</pubDate>
-      <sparkle:version>0.21.0</sparkle:version>
-      <sparkle:shortVersionString>0.21.0</sparkle:shortVersionString>
+      <title>Combiner 0.22.0</title>
+      <pubDate>Wed, 25 Nov 2026 00:45:03 +0000</pubDate>
+      <sparkle:version>0.22.0</sparkle:version>
+      <sparkle:shortVersionString>0.22.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Logic: a project shares its instrument tracks' MIDI as soon as you save it, with no render.</li><li>Logic: a track with several regions or a loop is one MIDI file, not one per region or repeat.</li><li>Your own tracks whose synth is still on Init are listed, dimmed, instead of missing.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.21.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="qfCDrVMYDn7yuK3hIvF7pAgXfekhVrLp3NNsld09YGZNv+4Qb+YP7rtyJ1FYwZMlODq7FQhOibKbKrF6Wo8bAg==" length="20028128"/>
+      <description><![CDATA[<ul><li>FL Studio projects now share their samples, MIDI and synth patches every time you save, with no render needed</li><li>Each Channel rack channel shows up as a track in the room</li><li>A project saved loose in a shared Projects folder no longer shares every audio file in that folder</li><li>The header starts just under the window buttons</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.22.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="jZtZM8oPyUs7GjlN4fSv43ZGeYgrRqvkOCPivjor4mqM3upgP+SOsN5i0IvLOmjNAF03i7U0MAdb7xWqDQGpAQ==" length="20182495"/>
     </item>
   </channel>
 </rss>
