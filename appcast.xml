@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.29.1</title>
-      <pubDate>Thu, 26 Nov 2026 16:54:18 +0000</pubDate>
-      <sparkle:version>0.29.1</sparkle:version>
-      <sparkle:shortVersionString>0.29.1</sparkle:shortVersionString>
+      <title>Combiner 0.30.0</title>
+      <pubDate>Thu, 26 Nov 2026 17:46:27 +0000</pubDate>
+      <sparkle:version>0.30.0</sparkle:version>
+      <sparkle:shortVersionString>0.30.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Fixed: Combiner could quit when a synth patch finished playing, or when you stopped or jumped within one.</li><li>Every VST3 synth in a Live set or an FL Studio project now shares its patch, as a .vstpreset.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.29.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="miY6cVRhBbGlRDlLGQI0wFbgNxQxdnj3UsMMyr7uwwDV5Dfa0XovlDBxIDuJ6wq8UICcwMABGN4/WukL3SP4Ag==" length="20271240"/>
+      <description><![CDATA[<ul><li>▶ on a VST3 synth patch (.vstpreset) now plays it on its synth: through the synth's Audio Unit when that can take the patch, otherwise on the VST3 itself.</li><li>Settings has a new section, "What doesn't work yet": what each DAW can't share or render yet.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.30.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="uZWCHWQMtbes6hrJaSpgKDeYYBNZFszVoPTL5ATjY2ZgqFWznVId6dPCRqrsqE1kkqJ5tbSJI9XVbizi6E5EDw==" length="20361984"/>
     </item>
   </channel>
 </rss>
