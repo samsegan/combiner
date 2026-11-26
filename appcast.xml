@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.29.0</title>
-      <pubDate>Thu, 26 Nov 2026 06:03:01 +0000</pubDate>
-      <sparkle:version>0.29.0</sparkle:version>
-      <sparkle:shortVersionString>0.29.0</sparkle:shortVersionString>
+      <title>Combiner 0.29.1</title>
+      <pubDate>Thu, 26 Nov 2026 16:54:18 +0000</pubDate>
+      <sparkle:version>0.29.1</sparkle:version>
+      <sparkle:shortVersionString>0.29.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>A Live set's samples go with each save, no render</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.29.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="ELttU8WHShvZ3quIggvvullQ0tZVBfIzV0+IoeNIwuOZ/ORXu8YlF2yk2Spl1S45I7bWQOu+kvY1HtXUVYJ4Ag==" length="20243448"/>
+      <description><![CDATA[<ul><li>Fixed: Combiner could quit when a synth patch finished playing, or when you stopped or jumped within one.</li><li>Every VST3 synth in a Live set or an FL Studio project now shares its patch, as a .vstpreset.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.29.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="miY6cVRhBbGlRDlLGQI0wFbgNxQxdnj3UsMMyr7uwwDV5Dfa0XovlDBxIDuJ6wq8UICcwMABGN4/WukL3SP4Ag==" length="20271240"/>
     </item>
   </channel>
 </rss>
