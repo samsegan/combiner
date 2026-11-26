@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.28.0</title>
-      <pubDate>Wed, 25 Nov 2026 23:22:44 +0000</pubDate>
-      <sparkle:version>0.28.0</sparkle:version>
-      <sparkle:shortVersionString>0.28.0</sparkle:shortVersionString>
+      <title>Combiner 0.29.0</title>
+      <pubDate>Thu, 26 Nov 2026 06:03:01 +0000</pubDate>
+      <sparkle:version>0.29.0</sparkle:version>
+      <sparkle:shortVersionString>0.29.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>Drop the usage-data note and the "Waiting for the room" card</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.28.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="JCkzUH97bKfL9s+icqC7L7uNr5oVFvxVLwn9t6bk7eZDsU1g1QxoX9GIolZgQQt7VTv96mnBxwSf6+8brbmMCQ==" length="20232287"/>
+      <description><![CDATA[<ul><li>A Live set's samples go with each save, no render</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.29.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="ELttU8WHShvZ3quIggvvullQ0tZVBfIzV0+IoeNIwuOZ/ORXu8YlF2yk2Spl1S45I7bWQOu+kvY1HtXUVYJ4Ag==" length="20243448"/>
     </item>
   </channel>
 </rss>
