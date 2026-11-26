@@ -1,8 +1,8 @@
-version: 0.2.0
+version: 0.3.0
 files:
-  - url: https://github.com/samsegan/combiner/releases/download/combiner-win-v0.2.0/Combiner-0.2.0-Windows-Setup.exe
-    sha512: 1fvEOo/ALs80j+l+0HdEyuEHa5SrK/lj3eS/2ZgW6FPkbJ/4Xdg/Zxv/2av1wqDUJtojI8v7ohAw17ocdEmVMg==
-    size: 115972527
-path: https://github.com/samsegan/combiner/releases/download/combiner-win-v0.2.0/Combiner-0.2.0-Windows-Setup.exe
-sha512: 1fvEOo/ALs80j+l+0HdEyuEHa5SrK/lj3eS/2ZgW6FPkbJ/4Xdg/Zxv/2av1wqDUJtojI8v7ohAw17ocdEmVMg==
-releaseDate: '2026-11-26T05:34:16.482Z'
+  - url: https://github.com/samsegan/combiner/releases/download/combiner-win-v0.3.0/Combiner-0.3.0-Windows-Setup.exe
+    sha512: BDHccaH2hwaYZ2GTLrDptAYu0WGVucRMq6CedZvj8T8+DrByivt13k4x8uR8qhX+zi9Ux01yC+YzxXUxUQVJlA==
+    size: 115978316
+path: https://github.com/samsegan/combiner/releases/download/combiner-win-v0.3.0/Combiner-0.3.0-Windows-Setup.exe
+sha512: BDHccaH2hwaYZ2GTLrDptAYu0WGVucRMq6CedZvj8T8+DrByivt13k4x8uR8qhX+zi9Ux01yC+YzxXUxUQVJlA==
+releaseDate: '2026-11-26T17:59:28.050Z'
