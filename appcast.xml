@@ -3,14 +3,14 @@
   <channel>
     <title>Combiner</title>
     <item>
-      <title>Combiner 0.30.0</title>
-      <pubDate>Thu, 26 Nov 2026 17:46:27 +0000</pubDate>
-      <sparkle:version>0.30.0</sparkle:version>
-      <sparkle:shortVersionString>0.30.0</sparkle:shortVersionString>
+      <title>Combiner 0.30.1</title>
+      <pubDate>Fri, 27 Nov 2026 04:46:35 +0000</pubDate>
+      <sparkle:version>0.30.1</sparkle:version>
+      <sparkle:shortVersionString>0.30.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <sparkle:phasedRolloutInterval>14400</sparkle:phasedRolloutInterval>
-      <description><![CDATA[<ul><li>▶ on a VST3 synth patch (.vstpreset) now plays it on its synth: through the synth's Audio Unit when that can take the patch, otherwise on the VST3 itself.</li><li>Settings has a new section, "What doesn't work yet": what each DAW can't share or render yet.</li></ul>]]></description>
-      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.30.0/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="uZWCHWQMtbes6hrJaSpgKDeYYBNZFszVoPTL5ATjY2ZgqFWznVId6dPCRqrsqE1kkqJ5tbSJI9XVbizi6E5EDw==" length="20361984"/>
+      <description><![CDATA[<ul><li>Report a problem now shows what you type. The box used to look empty while you typed.</li></ul>]]></description>
+      <enclosure url="https://github.com/samsegan/combiner/releases/download/combiner-v0.30.1/Combiner.dmg" type="application/octet-stream" sparkle:edSignature="kAsy79fFiol7ktUvdEdqKO/y7lp4F3QgrNvF3X2rcRdZxCQ/wiCSpX/70DvGxgONNDNP3I0j6DyYsVEUP2/XCQ==" length="20362600"/>
     </item>
   </channel>
 </rss>
